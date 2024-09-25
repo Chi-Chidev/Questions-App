@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-color: #181b33;
+    --light-color: #edf6ff;
+    --acent-color: #282d49;
+    --button-color: #727f5;
+}
+
+body {
+    background-color: var(--dark-color);
+    width: 100%;
+}
+
+/* heading Section */
+.heading{
+width: 100%;
+margin-left: 40px;
+margin-top: 40px;
+}
+
+.heading h2 {
+    font-weight: 700;
+    text-align: left;
+    color: var(--light-color);
+    font-size: 40px;
+    padding-bottom: 0.1%;
+}
+.heading p{
+    font-weight: 300;
+    text-align: left;
+    color: #bbbfc4;
+    font-size: 20px;
+}
+
+/* Question Box */
+.questions-box {
+    background-color: var(--acent-color);
+    border-radius: 10px;
+    /* width: 100%; */
+    margin-left: 4%;
+    margin-right: 4%;
+
+}
