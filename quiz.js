@@ -103,7 +103,7 @@ nextBtn.addEventListener("click", () => {
     messageBoxOne.style.display = "none"; // Hide the correct message box
 
     // Load the next question
-    if (currentIndex < quizQuestions.length) {
+    if (currentIndex < quizQuestions.length - 1) {
         currentIndex++;
         loadQuestion(currentIndex);
     } else {
