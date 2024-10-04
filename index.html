@@ -8,59 +8,86 @@
     <link rel="stylesheet" href="quiz.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
     <link
         href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <!-- First Section -->
-    <div class="heading">
-        <h2>General Knowledge</h2>
-        <p>Updated on September 25th 2024</p>
-    </div>
-    <!-- Second section -->
-    <div class="questions-box">
-        <img src="arrow-left.png" alt="A back icon" id="icon">
-        <h3>Question 2</h3>
-        <p>What is the capital of France?</p>
-    </div>
-    <!-- Third Section -->
-    <div class="answer-box">
-
-        <div class="secA">
-            <h3>Answer</h3>
-            <p>Please select one answer from the following options:</p>
+    <div class="firstDiv">
+        <!-- First Section -->
+        <div class="heading">
+            <h2>General Knowledge</h2>
+            <p>Updated on September 25th 2024</p>
         </div>
+        <!-- Second section -->
+        <div class="second-sec">
+            <div class="questions-box">
+                <img src="arrow-left.png" alt="A back icon" id="icon">
+                <h3>Question 2</h3>
+                <p>What is the capital of France?</p>
+            </div>
+            <!-- Third Section -->
+            <div class="third-div">
+                <div class="answer-box">
 
-        <!-- <div class="column"> -->
-        <!-- <div class="option-answer"> -->
+                    <div class="secA">
+                        <h3>Answer</h3>
+                        <p>Please select one answer from the following options:</p>
+                    </div>
 
-        <div class="option">
-            <input type="radio" id="berlin" name="answer1" value="Berlin">
-            <label for="berlin">Berlin.</label>
+                    <div class="option">
+                        <input type="radio" id="berlin" name="answer1" value="Berlin">
+                        <label for="berlin">Berlin.</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="madrid" name="answer1" value="Madrid">
+                        <label for="madrid">Madrid.</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="paris" name="answer1" value="Paris">
+                        <label for="paris">Paris.</label>
+                    </div>
+                </div>
+                <div class="button-sec">
+                    <button id="bttzn" type="submit">Submit</button>
+
+                </div>
+            </div>
         </div>
-
-        <div class="option">
-            <input type="radio" id="madrid" name="answer1" value="Madrid">
-            <label for="madrid">Madrid.</label>
-        </div>
-
-        <div class="option">
-            <input type="radio" id="paris" name="answer1" value="Paris">
-            <label for="paris">Paris.</label>
-        </div>
-        <!-- </div> -->
-
-        <!-- <div class="btn-class"> -->
-        <button class="bttn" type="submit">Submit</button>
-        <!-- </div> -->
-        <!-- </div> -->
-
     </div>
+    <!-- Messages -->
+    <div id="messageBg1">
+        <div id="messageBoxCorrect">
+            <h3>Correct!</h3>
+            <p>Click next to proceed to the next question.</p>
+            <!-- <div> -->
+            <button id="btc" type="next">Next</button>
+            <!-- </div> -->
+        </div>
+    </div>
+    <div id="messageBb2">
+        <div id="messageBoxInvalid">
+            <h3>Incorrect!</h3>
+            <p>Your choice of answer is incorrect.</p>
+            <button id="btcc" type="Retry">Try Again</button>
+        </div>
     </div>
 
 
+
+
+
+
+
+
+    <script src="quiz.js"></script>
+
+</body>
 
 
 </html>

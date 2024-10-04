@@ -20,6 +20,10 @@ body {
     width: 100%;
 }
 
+.firstDiv {
+    position: relative;
+}
+
 /* heading Section */
 .heading {
     margin-left: 40px;
@@ -56,6 +60,8 @@ body {
     margin-top: 4%;
 }
 
+
+
 .questions-box h3 {
     font-weight: 400;
     text-align: left;
@@ -72,7 +78,7 @@ body {
 }
 
 /* Answer section */
-.answer-box{
+.third-div {
     background-color: var(--acent-color);
     border-radius: 10px;
     margin-left: 4%;
@@ -107,7 +113,7 @@ body {
     margin-top: 2%;
 }
 
-.bttn {
+#bttzn {
     background-color: var(--button-color);
     margin-left: 85%;
     color: white;
@@ -116,4 +122,75 @@ body {
     border: none;
     border-radius: 4px;
     margin-top: 4%;
+    /* display: inline-block; */
+}
+
+/* message */
+
+#messageBg1,
+#messageBb2 {
+    display: none;
+    background-color: rgb(209, 213, 219, 0.3);
+    /* Optional: Adds a semi-transparent effect */
+    width: 100vw;
+    /* Full viewport width */
+    height: 100vh;
+    /* Full viewport height */
+    position: fixed;
+    /* Ensures the background stays in place when scrolling */
+    z-index: 9999;
+    /* High enough to cover all other elements */
+    top: 0;
+    left: 0;
+    /* display: none;  */
+
+}
+
+#messageBoxCorrect,
+#messageBoxInvalid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #282d49;
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50% -50%);
+    /* padding: 8%; */
+
+}
+
+#messageBoxCorrect h3,
+#messageBoxInvalid h3 {
+    text-align: center;
+    color: #edf6ff;
+    font-weight: 400;
+    font-size: 38px;
+    padding-bottom: 0.8%;
+    padding-top: 0%;
+}
+
+#messageBoxCorrect p,
+#messageBoxInvalid p {
+    text-align: center;
+    color: #edf6ff;
+    font-weight: 400;
+    font-size: 22px;
+    padding-bottom: 3%;
+}
+
+#btc,
+#btcc {
+    background-color: #727cf5;
+    color: white;
+    width: fit-content;
+    padding: 1% 4%;
+    border: none;
+    font-size: 22px;
+    border-radius: 4px;
+
 }
