@@ -43,8 +43,12 @@ const backBtn = document.getElementById("icon"); // Assuming it's for going back
 const submitBtn = document.getElementById("bttzn");
 const messageBoxOne = document.getElementById("messageBg1");
 const messageBoxTwo = document.getElementById("messageBb2");
+const messageBoxThree = document.getElementById("messageBb3");
+const messageBoxFour = document.getElementById("messageBb4");
 const nextBtn = document.getElementById("btc"); // Next button inside the correct message box
 const retryBtn = document.getElementById("btcc");
+const okBtn = document.getElementById("btcca");
+const okayBtn = document.getElementById("bttcc");
 
 const messageEl = document.querySelector("#messageBoxCorrect p");
 
@@ -87,8 +91,9 @@ submitBtn.addEventListener("click", () => {
 
     // Check if an option is selected
     if (!selectedAnswer) {
-        alert("No option has been selected. Please select an option!");
-        return;
+        messageBoxThree.style.display = "block";  //show the error message box
+        // alert("No option has been selected. Please select an option!");
+        // return;
     }
 
     // Check if the selected answer is correct
@@ -103,17 +108,27 @@ nextBtn.addEventListener("click", () => {
     messageBoxOne.style.display = "none"; // Hide the correct message box
 
     // Load the next question
-    if (currentIndex < quizQuestions.length - 1) {
+    if (currentIndex < quizQuestions.length) {
         currentIndex++;
         loadQuestion(currentIndex);
     } else {
-        alert("You've completed the quiz!");
+        messageBoxFour.style.display = "block";
+        // alert("You've completed the quiz!");
     }
 });
 
 // Retry button event listener (inside the incorrect message box)
 retryBtn.addEventListener("click", () => {
     messageBoxTwo.style.display = "none"; // Hide the incorrect message box
+});
+
+//the error message btn, hididng the modal
+okBtn.addEventListener("click", () => {
+    messageBoxThree.style.display = "none";
+});
+
+okayBtn.addEventListener("click",() => {
+    messageBoxFour.style.display = "none";
 });
 
 // Back button event listener

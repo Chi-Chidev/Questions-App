@@ -128,7 +128,9 @@ body {
 /* message */
 
 #messageBg1,
-#messageBb2 {
+#messageBb2,
+#messageBb3,
+#messageBb4 {
     display: none;
     background-color: rgb(209, 213, 219, 0.3);
     /* Optional: Adds a semi-transparent effect */
@@ -147,7 +149,7 @@ body {
 }
 
 #messageBoxCorrect,
-#messageBoxInvalid {
+#alert2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,9 +165,28 @@ body {
     /* padding: 8%; */
 
 }
+#messageBoxInvalid,
+#alert1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #C51D1D;
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50% -50%);
+}
+
+
 
 #messageBoxCorrect h3,
-#messageBoxInvalid h3 {
+#messageBoxInvalid h3,
+#alert1 h3,
+#alert2 h3 {
     text-align: center;
     color: #edf6ff;
     font-weight: 400;
@@ -175,7 +196,7 @@ body {
 }
 
 #messageBoxCorrect p,
-#messageBoxInvalid p {
+#alert2 p {
     text-align: center;
     color: #edf6ff;
     font-weight: 400;
@@ -183,8 +204,17 @@ body {
     padding-bottom: 3%;
 }
 
+#messageBoxInvalid p,
+#alert1 p{
+    text-align: center;
+    color: #FFEAEA;
+    font-weight: 400;
+    font-size: 22px;
+    padding-bottom: 3%;
+}
+
 #btc,
-#btcc {
+#bttcc {
     background-color: #727cf5;
     color: white;
     width: fit-content;
@@ -193,4 +223,15 @@ body {
     font-size: 22px;
     border-radius: 4px;
 
+}
+
+#btcc,
+#btcca {
+    background-color: #FFD0D0;
+    color: #F62323;
+    width: fit-content;
+    padding: 1% 4%;
+    border: none;
+    font-size: 22px;
+    border-radius: 4px; 
 }
